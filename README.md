@@ -1,105 +1,108 @@
-🚀 Laravel LMS Project
+# 🚀 Laravel LMS Project
 
-A Learning Management System (LMS) built with Laravel 9 and Voyager. Manage courses, lessons, users, and media easily.
+**A modern Learning Management System (LMS) built with Laravel 9 and Voyager. Easily manage courses, lessons, users, and media.**
 
-✨ Features
+---
 
-📚 Full CRUD for courses, lessons, and content.
+## ✨ Main Features
 
-👤 User roles: Admin, Instructor, Student.
+- **📚 Full CRUD for courses, lessons, and content**
+- **👤 User roles:** Admin, Instructor, Student
+- **🛠 Voyager Admin Panel for effortless management**
+- **🔒 Secure login, registration, and password reset**
+- **🖼 Media management (videos, documents, images)**
 
-🛠 Voyager Admin Panel for easy management.
+---
 
-🔒 Secure login, registration, and password reset.
+## 🖥️ Demo Screenshots
 
-🖼 Media management (videos, documents, images).
+Place screenshots from your running project in the `screenshots/` folder 👇
 
-🖼 Demo Screenshots
-🖥 Admin Dashboard
+### Admin Dashboard
+> Effortlessly manage users, courses, and content.
 
+### Courses List
+> View and edit all courses.
 
-Easily manage users, courses, and content.
+### Student Dashboard
+> Students can view enrolled courses and lessons.
 
-📖 Courses List
+---
 
+## ⚙️ Requirements
 
-View and edit all courses.
+- **PHP >= 8.0**
+- **Composer**
+- **MySQL**
+- **Node.js & npm**
 
-👩‍🎓 Student Dashboard
+---
 
+## 🛠️ Installation & Setup
 
-Students can view enrolled courses and lessons.
+1. **Clone the project:**
+    ```bash
+    git clone https://github.com/HishamELSayedAli/laravel-lms-project.git
+    cd laravel-lms-project
+    ```
 
-💡 Tip: Take screenshots from your running project and save them in screenshots/ folder.
+2. **Install dependencies:**
+    ```bash
+    composer install
+    npm install
+    ```
 
-⚙️ Requirements
+3. **Configure environment:**
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
 
-PHP >= 8.0
+    > Update your .env file with database credentials.
 
-Composer
+4. **Run migrations:**
+    ```bash
+    php artisan migrate
+    ```
 
-MySQL
+5. **(Optional) Seed database:**
+    ```bash
+    php artisan db:seed
+    ```
 
-Node.js & npm
+6. **Create storage link:**
+    ```bash
+    php artisan storage:link
+    ```
 
-🛠 Installation
+7. **Serve the application:**
+    ```bash
+    php artisan serve
+    ```
 
-Clone the project
+    > Visit [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
 
-git clone https://github.com/HishamELSayedAli/laravel-lms-project.git
-cd laravel-lms-project
+---
 
+## 🛡️ Admin Panel
 
-Install dependencies
+- Default Voyager admin path: `/admin`
+- For extra security, consider changing `/admin` in `routes/web.php`.
 
-composer install
-npm install
+---
 
+## 🔐 Security Tips
 
-Configure environment
+- In production, set `APP_ENV=production` and `APP_DEBUG=false`.
+- Limit admin panel access strictly to admins.
 
-cp .env.example .env
-php artisan key:generate
+---
 
+## 📝 Notes
 
-Update .env with your database credentials.
+- Frontend uses **Blade** & **Alpine.js**.
+- Easy to extend with more features or UI improvements.
 
-Run migrations
+---
 
-php artisan migrate
-
-
-(Optional) Seed database
-
-php artisan db:seed
-
-
-Create storage link
-
-php artisan storage:link
-
-
-Serve the application
-
-php artisan serve
-
-
-Visit http://127.0.0.1:8000.
-
-🛡 Admin Panel
-
-Default Voyager admin: /admin
-
-Consider changing /admin in routes/web.php for extra security.
-
-🔐 Security Tips
-
-In production, set APP_ENV=production and APP_DEBUG=false.
-
-Limit admin access strictly.
-
-📝 Notes
-
-Frontend uses Blade + Alpine.js.
-
-Easy to extend with more features or UI improvements.
+> **Developed by [HishamELSayedAli](https://github.com/HishamELSayedAli)**
